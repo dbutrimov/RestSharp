@@ -67,9 +67,7 @@ namespace RestSharp.Extensions
             var encoded = HttpUtility.UrlEncode(input, encoding);
             return encoded?.Replace("+", "%20");
         }
-
-        public static string HtmlAttributeEncode(this string input) => HttpUtility.HtmlAttributeEncode(input);
-
+        
         /// <summary>
         ///     Check that a string is not null or empty
         /// </summary>
